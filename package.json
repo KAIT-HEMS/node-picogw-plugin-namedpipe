@@ -1,0 +1,16 @@
+{
+  "name": "picogw-plugin-namedpipe",
+  "version": "0.0.1",
+  "description": "Named Pipe plugin of picogw",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "picogw": {
+    "role": [
+      "client"
+    ]
+  }
+}
