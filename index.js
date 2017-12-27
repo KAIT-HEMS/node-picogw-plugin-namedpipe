@@ -52,7 +52,7 @@ function init(pluginInterface) {
                     pi.client.unsubscribeall(req.path);
                     ws.write(JSON.stringify({success: true, tid: req.tid}));
                 } else {
-                    pi.client.callproc(req).then((re)=>{
+                    pi.client.callProc(req).then((re)=>{
                         re.tid = req.tid;
                         ws.write(JSON.stringify(re)+'\n');
                     }).catch((e)=>{
